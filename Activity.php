@@ -1,4 +1,5 @@
 <?php
+
 function getDay($dayNumber) {
     switch ($dayNumber) {
         case 1: return "Monday";
@@ -11,11 +12,13 @@ function getDay($dayNumber) {
         default: return "Invalid day number";
     }
 }
-function getCurrenDate() {
+
+function getCurrentDate() {
     $currentDate = new DateTime();
     return $currentDate->format("l, F d, Y");
 }
 
 echo "Today is: " . getDay(date('N')) . "<br>";
 echo "Date: " . getCurrentDate();
+
 ?>
