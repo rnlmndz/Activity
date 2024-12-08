@@ -16,6 +16,6 @@ function getCurrenDate() {
     return $currentDate->format("l, F d, Y");
 }
 
-echo "Today is: " . getDay(date'N')) . "<br>";
+echo "Today is: " . getDay(date('N')) . "<br>";
 echo "Date: " . getCurrentDate();
 ?>
